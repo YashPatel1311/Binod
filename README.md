@@ -6,13 +6,13 @@ A python script that comments "BINOD" on Youtube videos as many times as the use
 
 1. Install ```selenium``` package
 
-``` pip install selenium ```
+    ``` pip install selenium ```
 
-or 
+    or 
 
-```conda install selenium```
+    ```conda install selenium```
 
-And you are good to go
+    And you are good to go
 
 ## Requirements
 
