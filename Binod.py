@@ -29,23 +29,26 @@ if n>0:
     vid1=driver.find_element_by_xpath('//*[@id="video-title"]')
     vid1.click()
 
-i=1
+i=0
 
 while i<n:
 
+    i+=1
+
+    # wait for browser to scroll down
     time.sleep(2)
     driver.execute_script("window.scrollTo(0, 720);")
     time.sleep(2)
 
+    #  find comment box and click on it
     commentbox=driver.find_element_by_xpath('//*[@id="placeholder-area"]')
     commentbox.click()
 
-
+    # Enter text
     comment_input=driver.find_element_by_xpath('//*[@id="contenteditable-root"]')
     comment_input.send_keys('BINOD')
 
+    # post the comment and go to next video
     webdriver.ActionChains(driver).key_down(Keys.CONTROL).key_down(Keys.ENTER).key_up(Keys.CONTROL).key_up(Keys.ENTER).perform()
     time.sleep(2)
     webdriver.ActionChains(driver).key_down(Keys.SHIFT).send_keys('n').key_up(Keys.SHIFT).perform()
-    
-    i+=1
