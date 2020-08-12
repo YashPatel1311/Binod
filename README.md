@@ -5,8 +5,11 @@ A python script that comments "BINOD" on Youtube videos as many times as the use
 ## Installation
 
 1. Install ```selenium``` package
+
 ``` pip install selenium ```
+
 or 
+
 ```conda install selenium```
 
 And you are good to go
